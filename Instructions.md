@@ -1,6 +1,6 @@
 
 GETTING STARTED - INITIAL SET UP - RUNNING PREDICTION ON A MODEL
-###############################################################################################################
+##########################################################################################################
 1. create a virtual env with python 3.9.12   conda create ....
 2. install Cuda toolkit 11.3.1 using  conda install -c "nvidia/label/cuda-11.3.1" cuda-toolkit
 3. Run from terminal:  pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/torch_stable.html #Make sure all previous version are uninstalled#
@@ -53,30 +53,30 @@ If everything works at this stage, then an existing model can be used to perform
 
 
 #NOTE: I have to use demo_vacc.py because of object classes metadata registration required by the framework
-###############################################################################################################
+##########################################################################################################
 
-###############################################################################################################
+##########################################################################################################
 DEPENDENCIES: 
-			Warning  											SOLUTION
-tensorboard 2.9.1 requires requests<3,>=2.21.0, which is not installed.				pip install requests=2.28.1
-tensorboard 2.9.1 requires werkzeug>=1.0.1, which is not installed.				pip install werkzeug==2.1.2
-scikit-learn 1.1.1 requires scipy>=1.3.2, which is not installed.				pip install scipy==1.9.0rc1
-pycocotools 2.0.4 requires matplotlib>=2.1.0, which is not installed.				pip install matplotlib==3.5.2
-fvcore 0.1.5.post20220512 requires tqdm, which is not installed.				pip install tqdm==4.64.0
+			Warning/ 											SOLUTION
+tensorboard 2.9.1 requires requests<3,>=2.21.0, which is not installed.	/			pip install requests=2.28.1
+tensorboard 2.9.1 requires werkzeug>=1.0.1, which is not installed.	/			pip install werkzeug==2.1.2
+scikit-learn 1.1.1 requires scipy>=1.3.2, which is not installed.	/			pip install scipy==1.9.0rc1
+pycocotools 2.0.4 requires matplotlib>=2.1.0, which is not installed.	/			pip install matplotlib==3.5.2
+fvcore 0.1.5.post20220512 requires tqdm, which is not installed.	/			pip install tqdm==4.64.0
 
 
 Downgrade the following to:
-rapidfuzz to 2.1.1
-numpy to 1.23.0
-setuptools to 59.5.0
-shapely==1.8.2
+rapidfuzz to 2.1.1 ,
+numpy to 1.23.0 ,
+setuptools to 59.5.0 ,
+shapely==1.8.2 
 
 
 
-###############################################################################################################
+##########################################################################################################
 
 TRAINING ON A CUSTOM DATASET
-###############################################################################################################
+##########################################################################################################
 To train a custom dataset.
 
 1. To train a dataset, steps 1 to 9 above are very important before moving ahead.
@@ -106,12 +106,12 @@ train_net.py is the main training script. This script must be customized for the
 For simplicity the customized dataset has been provided 'train_net_vacc.py'. It can be renamed. 
 
 Using the original train_net.py from the original repo, returns: AssertionError: Attribute 'thing_classes' in the metadata of 'coco_2017_train' cannot be set to a different value!...
-###############################################################################################################
+##########################################################################################################
 
 
 
 POSSIBLE DEPENDENCY PROBLEMS AND SOLUTIONS
-###############################################################################################################
+##########################################################################################################
 PROBLEM:site-packages/torch/utils/tensorboard/__init__.py", line 4, in <module> LooseVersion = distutils.version.LooseVersion AttributeError: module 'distutils' has no attribute 'version'
 SOLUTION: Downgrade setuptools to 59.5.0
 
@@ -121,12 +121,12 @@ SOLUTION: Downgrade to numpy 1.23.1
 
 PROBLEM: "Multi-polygon object not iterable"
 SOLUTION: DOwngrade 'shapely' e.g.  pip install shapely==1.8.2
-###############################################################################################################
+##########################################################################################################
 
 
 
 SUPPLEMENTARY UTILITY FUNCTIONS
-###############################################################################################################
+##########################################################################################################
 There is an utility python file that has functions to do tasks such as plot ground truth of images with annotations.The use of these supplemetary functions are illustrated in 'utilis_illustrate.ipynb' 
 
 The functions description are as follows
@@ -145,7 +145,7 @@ The functions description are as follows
 2. register the dataset you maybe interested in
 3. To use the prediction functions, in addition to 1. and 2, assign class definitions to a string variable
 
-###############################################################################################################
+##########################################################################################################
 
 
 
