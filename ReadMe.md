@@ -28,6 +28,8 @@ GETTING STARTED - INITIAL SET UP - RUNNING PREDICTION ON A MODEL
     			--confidence-threshold 0.35 \
     			--opts MODEL.WEIGHTS blendmask_r101_dcni3_5x.pth
 If everything works at this stage, then an existing model can be used to perform predictions.
+
+
  
 10. To run the demo for our own model i.e BlendMask model for the Vaccinium dataset,we need the following different from above:
 		1. config yaml  file
@@ -47,6 +49,15 @@ If everything works at this stage, then an existing model can be used to perform
 
 #NOTE: I have to use demo_vacc.py because of object classes metadata registration required by the framework
 ###################################################################################################################################################################################################################################
+
+
+![image](https://user-images.githubusercontent.com/66762480/233765923-4c680c4b-9565-4989-8e30-9b1eeeb15e25.png)
+
+![image](https://user-images.githubusercontent.com/66762480/233765941-d332eb45-cfbb-4a0f-939f-04d04bf08b21.png)
+
+
+
+
 
 
 
