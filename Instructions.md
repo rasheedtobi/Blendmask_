@@ -55,6 +55,8 @@ If everything works at this stage, then an existing model can be used to perform
 #NOTE: I have to use demo_vacc.py because of object classes metadata registration required by the framework
 ##########################################################################################################
 
+
+TRAINING THE NETWORK
 ##########################################################################################################
 DEPENDENCIES: 
 			Warning/ 											SOLUTION
