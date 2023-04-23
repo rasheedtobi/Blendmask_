@@ -10,8 +10,10 @@ GETTING STARTED - INITIAL SET UP - RUNNING PREDICTION ON A MODEL
 
 	pip install opencv-python 
 	pip install opencv-jupyter-ui
+	
+	#It is helpful to switch to a notebook after this step. You may want to use as areference 'instruction_steps.ipynb'
 
-5. Clone AdelaiDET - !git clone https://github.com/aim-uofa/AdelaiDet.git #It is helpful to switch to a notebook after this step.
+5. Clone AdelaiDET - !git clone https://github.com/aim-uofa/AdelaiDet.git 
 6. cd to AdelaiDet and run !python setup.py build develop
 
 7. pip install opencv-python
