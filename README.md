@@ -1,6 +1,6 @@
 # Blendmask_
 
-This repository is the implementation of instance segmentation of plant objects using the state-of-the-art deep learning model -BlendmMsk
+This repository is the implementation of instance segmentation of plant objects using the state-of-the-art deep learning model -BlendMask
 
 Check to instructions.md for details of the implementation.
 
